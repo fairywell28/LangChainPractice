@@ -3,7 +3,7 @@ import streamlit as st
 from langchain_openai import ChatOpenAI
 from langchain_classic.agents import AgentType, initialize_agent
 from langchain_community.agent_toolkits.load_tools import load_tools
-from langchain_classic.callbacks import StreamlitCallbackHandler
+from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 
 OPENAI_API_KEY = st.sidebar.text_input('OpenAI API Key')
 
